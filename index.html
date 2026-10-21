@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Хэйлунцзян: провинция Чёрного дракона</title>
+<meta name="description" content="Доклад по географии Китая: провинция Хэйлунцзян, её природа, хозяйство, люди и связи с Россией. С квизом в конце.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400..700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&display=swap">
+<style>
+:root{--bg:#0b1422}
+html,body{margin:0;height:100%;background:var(--bg);overflow:hidden;font-family:'Nunito Sans',Arial,sans-serif}
+#stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:0 0}
+#stage>section{position:absolute;inset:0;width:1920px;height:1080px;box-sizing:border-box;overflow:hidden;opacity:0;visibility:hidden;transition:opacity .5s,visibility .5s}
+#stage>section.on{opacity:1;visibility:visible}
+#stage section *{margin:0;box-sizing:border-box}
+#stage section ul,#stage section ol{padding-left:1.3em}
+#stage section aside{display:none}
+#stage section.notes aside{display:block;position:absolute;left:0;right:0;bottom:0;max-height:45%;overflow:auto;background:rgba(15,27,45,.94);color:#EEF3F6;font-size:30px;line-height:1.4;padding:28px 48px;z-index:5}
+[data-build-in]{opacity:0}
+[data-build-in].shown{opacity:1;animation:var(--a) .6s cubic-bezier(.2,.7,.3,1) both}
+[data-build-in].done{opacity:1;animation:none}
+@keyframes b-fade{from{opacity:0}to{opacity:1}}
+@keyframes b-rise{from{opacity:0;transform:translateY(48px)}to{opacity:1;transform:none}}
+@keyframes b-pop{0%{opacity:0;transform:scale(.6)}70%{opacity:1;transform:scale(1.06)}100%{opacity:1;transform:none}}
+@keyframes b-left{from{opacity:0;transform:translateX(-80px)}to{opacity:1;transform:none}}
+@keyframes b-right{from{opacity:0;transform:translateX(80px)}to{opacity:1;transform:none}}
+#bar{position:fixed;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;gap:12px;padding:10px;opacity:.25;transition:opacity .3s;z-index:10;font:15px Arial,sans-serif;color:#C9D6E3}
+#bar:hover,#bar.show{opacity:1}
+#bar button{background:#1A2B44;color:#EEF3F6;border:0;border-radius:8px;padding:8px 14px;font:inherit;cursor:pointer}
+#bar button:focus-visible{outline:2px solid #F26B6B}
+#hint{position:fixed;top:12px;left:50%;transform:translateX(-50%);background:rgba(26,43,68,.92);color:#EEF3F6;font:15px Arial,sans-serif;padding:10px 16px;border-radius:10px;z-index:11;transition:opacity .6s;text-align:center;max-width:calc(100% - 32px)}
+</style>
+</head>
+<body>
+<div id="stage">
+<section id="cover" data-transition="fade" style="background:#0F1B2D;color:#EEF3F6;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p data-build-in="fade auto" style="position:absolute;left:840px;top:250px;width:952px;font-family:'Noto Serif SC', serif;font-size:300px;line-height:1.1;color:#1F3656;text-align:right">黑龙江</p>
+<p style="position:absolute;left:128px;top:300px;width:1000px;font-size:32px;font-weight:700;letter-spacing:6px;text-transform:uppercase;color:#F26B6B">Доклад по географии Китая</p>
+<h1 style="position:absolute;left:128px;top:360px;width:1300px;font-family:Oswald, Arial, sans-serif;font-size:200px;font-weight:700;line-height:1.1;color:#EEF3F6">Хэйлунцзян</h1>
+<p data-build-in="rise auto" style="position:absolute;left:128px;top:600px;width:1100px;font-size:44px;line-height:1.3;color:#C9D6E3">Провинция Чёрного дракона на самом севере Китая</p>
+<p style="position:absolute;left:128px;top:840px;width:1400px;font-size:24px;color:#8FA3B8">[Имя Фамилия], [группа] · Факультет востоковедения · 2026</p>
+<aside>Здравствуйте! Тема моего доклада — провинция Хэйлунцзян. Это самая северная провинция Китая, а её столица — город Харбин. Я расскажу о природе провинции, о её хозяйстве, людях и связях с Россией, а в конце будет небольшой квиз.</aside>
+</section>
+<section id="china" data-transition="fade" style="background:#EEF3F6;color:#1B2A3D;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<h2 style="position:absolute;left:128px;top:128px;width:1664px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#0F1B2D">Где на карте Китая?</h2>
+<iframe class="embed" style="position:absolute;left:128px;top:230px;width:1664px;height:722px;border:0;background:transparent" srcdoc="<!doctype html><html><head><meta charset=&quot;utf-8&quot;><style>
+html,body{margin:0;height:100%;background:transparent;overflow:hidden;font-family:&quot;Segoe UI&quot;,Arial,sans-serif}
+svg{width:100%;height:100%;display:block}
+text{font-family:&quot;Segoe UI&quot;,Arial,sans-serif}
+#zoom{transform-origin:0 0;animation:zoom 16s ease-in-out infinite}
+@keyframes zoom{0%,31%{transform:translate(0px,0px) scale(1) translate(0px,0px)}44%,93%{transform:translate(470px,346px) scale(2.6) translate(-827px,-110px)}100%{transform:translate(0px,0px) scale(1) translate(0px,0px)}}
+#hlj{animation:hf 16s ease-in-out infinite}
+@keyframes hf{0%,31%{fill:#C8102E}44%,93%{fill:#F6DCE0}100%{fill:#C8102E}}
+.a{animation:la 16s linear infinite}
+.b{opacity:0;animation:lb 16s linear infinite}
+@keyframes la{0%{opacity:0}4%{opacity:1}30%{opacity:1}34%{opacity:0}100%{opacity:0}}
+@keyframes lb{0%,46%{opacity:0}51%{opacity:1}92%{opacity:1}96%{opacity:0}100%{opacity:0}}
+.c{font-size:28px;fill:#3C4A5C;font-weight:600}
+.s{font-size:24px;fill:#56657A;font-weight:600}
+.big{font-size:44px;fill:#56657A;font-weight:700;letter-spacing:6px}
+.r{font-size:32px;fill:#C8102E;font-weight:700}
+.cap{position:absolute;left:0;right:0;top:0;font-size:32px;font-weight:700;color:#0F1B2D;text-align:center}
+</style></head><body>
+<svg viewBox=&quot;-420 -40 1780 772&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;>
+<g id=&quot;zoom&quot;>
+<polygon points=&quot;723,14 742.5,9 757.5,10 780,18 798,32 804,46 817.5,76 847.5,92 865.5,102 868.5,120 892.5,126 925.5,114 931.5,111 915,140 900,168 882,182 871.5,200 864,232 826.5,252 802.5,248 771,280 723,304 739.5,270 720,262 697.5,284 672,300 687,328 715.5,324 744,334 709.5,360 694.5,380 712.5,420 733.5,448 733.5,464 733.5,484 726,514 705,546 696,574 675,592 652.5,620 618,634 604.5,640 574.5,650 556.5,674 550.5,650 525,648 505.5,624 484.5,614 463.5,628 438,632 429,656 406.5,648 393,638 388.5,616 369,602 385.5,564 385.5,530 367.5,512 345,496 324,494 285,524 249,516 226.5,522 195,522 165,508 123,480 90,452 85.5,428 79.5,388 43.5,348 22.5,334 9,294 24,272 48,268 82.5,252 108,238 109.5,210 115.5,176 142.5,172 150,136 189,140 214.5,98 237,120 262.5,150 268.5,174 336,194 351,226 417,228 480,248 517.5,232 561,224 583.5,204 579,178 609,186 655.5,152 703.5,146 678,120 639,122 672,90 694.5,74 717,28&quot; fill=&quot;#C9D4DF&quot; stroke=&quot;#8FA3B8&quot; stroke-width=&quot;2&quot; stroke-linejoin=&quot;round&quot;/>
+<polygon points=&quot;534,696 555,678 570,688 562.5,712 547.5,716 535.5,710&quot; fill=&quot;#C9D4DF&quot; stroke=&quot;#8FA3B8&quot; stroke-width=&quot;2&quot;/>
+<polygon points=&quot;727.5,574 735,580 727.5,610 717,640 708,628 706.5,606 720,580&quot; fill=&quot;#C9D4DF&quot; stroke=&quot;#8FA3B8&quot; stroke-width=&quot;2&quot;/>
+<polygon id=&quot;hlj&quot; points=&quot;723,14 742.5,9 757.5,10 780,18 798,32 804,46 810,62 817.5,76 832.5,88 847.5,92 865.5,102 868.5,120 877.5,126 892.5,126 907.5,118 925.5,114 931.5,111 924,128 915,140 909,154 900,168 889.5,176 882,182 873,188 871.5,200 864,211 855,202 844.5,198 831,192 819,188 808.5,180 796.5,176 784.5,174 772.5,170 763.5,160 759,144 768,128 772.5,114 783,96 787.5,80 771,68 750,60 732,50 726,32&quot; fill=&quot;#C8102E&quot; stroke=&quot;#C8102E&quot; stroke-width=&quot;1.5&quot; stroke-linejoin=&quot;round&quot;/>
+<polyline points=&quot;723,14 742.5,9 757.5,10 780,18 798,32 804,46 810,62 817.5,76 832.5,88 847.5,92 865.5,102 868.5,120 877.5,126 892.5,126 907.5,118 925.5,114 931.5,111 924,128 915,140 909,154 900,168 889.5,176 882,182&quot; fill=&quot;none&quot; stroke=&quot;#3A7CA5&quot; stroke-width=&quot;2.2&quot; stroke-linejoin=&quot;round&quot; stroke-linecap=&quot;round&quot;/>
+<circle cx=&quot;651&quot; cy=&quot;282&quot; r=&quot;6&quot; fill=&quot;#0F1B2D&quot;/>
+<circle cx=&quot;804&quot; cy=&quot;165&quot; r=&quot;3.2&quot; fill=&quot;#0F1B2D&quot;/>
+</g>
+<g class=&quot;a&quot;>
+<text x=&quot;430&quot; y=&quot;60&quot; class=&quot;big&quot; text-anchor=&quot;middle&quot;>РОССИЯ</text>
+<text x=&quot;440&quot; y=&quot;175&quot; class=&quot;c&quot; text-anchor=&quot;middle&quot;>Монголия</text>
+<text x=&quot;-20&quot; y=&quot;160&quot; class=&quot;c&quot; text-anchor=&quot;end&quot;>Казахстан</text>
+<text x=&quot;-20&quot; y=&quot;250&quot; class=&quot;c&quot; text-anchor=&quot;end&quot;>Киргизия</text>
+<text x=&quot;-20&quot; y=&quot;305&quot; class=&quot;c&quot; text-anchor=&quot;end&quot;>Таджикистан</text>
+<text x=&quot;-20&quot; y=&quot;350&quot; class=&quot;c&quot; text-anchor=&quot;end&quot;>Афганистан</text>
+<text x=&quot;-20&quot; y=&quot;400&quot; class=&quot;c&quot; text-anchor=&quot;end&quot;>Пакистан</text>
+<text x=&quot;40&quot; y=&quot;520&quot; class=&quot;c&quot; text-anchor=&quot;middle&quot;>Индия</text>
+<text x=&quot;170&quot; y=&quot;552&quot; class=&quot;c&quot; text-anchor=&quot;middle&quot;>Непал</text>
+<text x=&quot;268&quot; y=&quot;562&quot; class=&quot;c&quot; text-anchor=&quot;middle&quot;>Бутан</text>
+<text x=&quot;340&quot; y=&quot;662&quot; class=&quot;c&quot; text-anchor=&quot;middle&quot;>Мьянма</text>
+<text x=&quot;415&quot; y=&quot;695&quot; class=&quot;c&quot; text-anchor=&quot;middle&quot;>Лаос</text>
+<text x=&quot;500&quot; y=&quot;728&quot; class=&quot;c&quot; text-anchor=&quot;middle&quot;>Вьетнам</text>
+<text x=&quot;835&quot; y=&quot;300&quot; class=&quot;c&quot;>КНДР</text>
+<text x=&quot;400&quot; y=&quot;400&quot; class=&quot;big&quot; text-anchor=&quot;middle&quot; style=&quot;fill:#8FA3B8&quot;>КИТАЙ</text>
+<text x=&quot;640&quot; y=&quot;276&quot; class=&quot;s&quot; text-anchor=&quot;end&quot;>Пекин</text>
+<text x=&quot;945&quot; y=&quot;125&quot; class=&quot;r&quot;>← Хэйлунцзян</text>
+</g>
+<g class=&quot;b&quot;>
+<text x=&quot;600&quot; y=&quot;90&quot; class=&quot;big&quot; text-anchor=&quot;middle&quot;>РОССИЯ</text>
+<text x=&quot;520&quot; y=&quot;200&quot; class=&quot;c&quot;>Амурская область</text>
+<text x=&quot;640&quot; y=&quot;288&quot; class=&quot;c&quot; text-anchor=&quot;middle&quot;>Еврейская АО</text>
+<text x=&quot;760&quot; y=&quot;345&quot; class=&quot;c&quot;>Хабаровский край</text>
+<text x=&quot;660&quot; y=&quot;565&quot; class=&quot;c&quot;>Приморский край</text>
+<text x=&quot;290&quot; y=&quot;390&quot; class=&quot;c&quot; text-anchor=&quot;end&quot;>Внутренняя Монголия</text>
+<text x=&quot;290&quot; y=&quot;424&quot; class=&quot;s&quot; text-anchor=&quot;end&quot;>(автономный район Китая)</text>
+<text x=&quot;430&quot; y=&quot;652&quot; class=&quot;c&quot; text-anchor=&quot;middle&quot;>провинция Цзилинь</text>
+<text x=&quot;430&quot; y=&quot;684&quot; class=&quot;s&quot; text-anchor=&quot;middle&quot;>(Китай)</text>
+<text x=&quot;470&quot; y=&quot;400&quot; class=&quot;big&quot; text-anchor=&quot;middle&quot; style=&quot;fill:#C8102E&quot;>ХЭЙЛУНЦЗЯН</text>
+<text x=&quot;422&quot; y=&quot;484&quot; class=&quot;c&quot; style=&quot;fill:#0F1B2D&quot;>Харбин</text>
+</g>
+</svg>
+<div class=&quot;cap a&quot;>У Китая 14 соседей по суше</div>
+<div class=&quot;cap b&quot;>Соседи провинции: Россия, Внутренняя Монголия и провинция Цзилинь</div>
+</body></html>" title="Анимированная карта"></iframe>
+<aside>Сначала найдём провинцию на карте. У Китая 14 соседей по суше — столько же, сколько у России, и это мировой рекорд. Среди них Россия, Монголия, Казахстан, Индия, Вьетнам, КНДР и другие. Хэйлунцзян — вот этот красный северо-восточный угол. (Пауза — карта сама приближается.) Теперь видно соседей самой провинции. На севере и востоке это Россия: Амурская область, Еврейская автономная область, Хабаровский и Приморский края. На западе — Внутренняя Монголия, на юге — провинция Цзилинь. Анимация повторяется каждые 16 секунд.</aside>
+</section>
+<section id="shape" data-transition="fade" style="background:#EEF3F6;color:#1B2A3D;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#C8102E">Вопрос залу</p>
+<h2 style="position:absolute;left:128px;top:168px;width:1664px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#0F1B2D">На что похож контур провинции?</h2>
+<p style="position:absolute;left:128px;top:420px;width:420px;font-size:32px;line-height:1.4;color:#3C4A5C">Посмотрите на силуэт и предложите свой вариант!</p>
+<svg aria-label="Силуэт провинции Хэйлунцзян без подписей" style="position:absolute;left:600px;top:280px;width:670px;height:662px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg">
+<polygon points="22,50 100,30 160,34 250,66 322,122 346,178 370,242 400,298 460,346 520,362 592,402 604,474 640,498 700,498 760,466 832,450 856,438 826,506 790,554 766,610 730,666 688,698 658,722 622,746 616,794 586,838 550,802 508,786 454,762 406,746 364,714 316,698 268,690 220,674 184,634 166,570 202,506 220,450 262,378 280,314 214,266 130,234 58,194 34,122" fill="#0F1B2D" stroke="#0F1B2D" stroke-width="6" stroke-linejoin="round"/>
+</svg>
+<p data-build-in="pop order 1" style="position:absolute;left:1340px;top:400px;width:452px;font-family:Oswald, Arial, sans-serif;font-size:120px;font-weight:700;line-height:1.1;color:#C8102E">Лебедь!</p>
+<p data-build-in="fade order 1" style="position:absolute;left:1340px;top:560px;width:452px;font-size:32px;line-height:1.4;color:#3C4A5C">Китайцы говорят, что на карте Хэйлунцзян похож на летящего лебедя.</p>
+<aside>Прежде чем рассматривать провинцию подробно, вопрос к залу: на что похож её контур? Дайте пару секунд, выслушайте варианты. Затем нажмите — появится ответ. Китайцы говорят, что на карте Хэйлунцзян похож на летящего лебедя.</aside>
+</section>
+<section id="map" data-transition="fade" style="background:#EEF3F6;color:#1B2A3D;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<svg aria-label="Карта провинции Хэйлунцзян и её соседей: Россия на севере и востоке, Внутренняя Монголия на западе, провинция Цзилинь на юге" style="position:absolute;left:128px;top:128px;width:760px;height:751px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg">
+<polygon points="0,0 870,0 870,860 586,860 586,838 616,794 622,746 658,722 688,698 730,666 766,610 790,554 826,506 856,438 832,450 760,466 700,498 640,498 604,474 592,402 520,362 460,346 400,298 370,242 346,178 322,122 250,66 160,34 100,30 22,50 0,44" fill="#DCE3EB"/>
+<polygon points="22,50 100,30 160,34 250,66 322,122 346,178 370,242 400,298 460,346 520,362 592,402 604,474 640,498 700,498 760,466 832,450 856,438 826,506 790,554 766,610 730,666 688,698 658,722 622,746 616,794 586,838 550,802 508,786 454,762 406,746 364,714 316,698 268,690 220,674 184,634 166,570 202,506 220,450 262,378 280,314 214,266 130,234 58,194 34,122" fill="#F6DCE0" stroke="#C8102E" stroke-width="4" stroke-linejoin="round"/>
+<path d="M100 200 l22 -38 l22 38 z M150 240 l20 -34 l20 34 z M420 420 l22 -38 l22 38 z M470 450 l20 -34 l20 34 z M560 700 l20 -34 l20 34 z M640 640 l20 -34 l20 34 z" fill="#C9A6AC"/>
+<polyline points="22,50 100,30 160,34 250,66 322,122 346,178 370,242 400,298 460,346 520,362 592,402 604,474 640,498 700,498 760,466 832,450 856,438" fill="none" stroke="#3A7CA5" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="856,438 826,506 790,554 766,610 730,666 688,698 658,722" fill="none" stroke="#3A7CA5" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="250,674 300,680 346,654 420,640 500,606 568,570 640,520 700,498" fill="none" stroke="#3A7CA5" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="262,330 250,400 226,470 214,540 218,610 250,674" fill="none" stroke="#3A7CA5" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="690" cy="725" rx="30" ry="24" fill="#3A7CA5"/>
+<circle cx="100" cy="74" r="9" fill="#0F1B2D"/>
+<circle cx="400" cy="294" r="9" fill="#0F1B2D"/>
+<circle cx="205" cy="526" r="9" fill="#0F1B2D"/>
+<circle cx="250" cy="586" r="9" fill="#0F1B2D"/>
+<circle cx="568" cy="570" r="9" fill="#0F1B2D"/>
+<circle cx="526" cy="746" r="9" fill="#0F1B2D"/>
+<circle cx="346" cy="654" r="18" fill="#C8102E" stroke="#FBFCFD" stroke-width="5"/>
+</svg>
+<p style="position:absolute;left:600px;top:136px;width:280px;font-family:Oswald, Arial, sans-serif;font-size:44px;letter-spacing:8px;color:#56657A">РОССИЯ</p>
+<p data-build-in="fade order 1" style="position:absolute;left:470px;top:228px;width:250px;font-size:24px;font-weight:700;color:#3C4A5C">Амурская область</p>
+<p data-build-in="fade order 1" style="position:absolute;left:660px;top:356px;width:220px;font-size:24px;font-weight:700;color:#3C4A5C">Еврейская АО</p>
+<p data-build-in="fade order 1" style="position:absolute;left:760px;top:440px;width:230px;font-size:24px;font-weight:700;color:#3C4A5C">Хабаровский край</p>
+<p data-build-in="fade order 1" style="position:absolute;left:838px;top:664px;width:150px;font-size:24px;font-weight:700;line-height:1.3;color:#3C4A5C">Приморский край</p>
+<p data-build-in="fade order 2" style="position:absolute;left:136px;top:400px;width:200px;font-size:24px;font-weight:700;line-height:1.3;color:#3C4A5C">ВНУТРЕННЯЯ МОНГОЛИЯ <span style="color:#56657A">(Китай)</span></p>
+<p data-build-in="fade order 2" style="position:absolute;left:400px;top:862px;width:440px;font-size:24px;font-weight:700;color:#3C4A5C">провинция ЦЗИЛИНЬ <span style="color:#56657A">(Китай)</span></p>
+<p style="position:absolute;left:300px;top:128px;width:160px;font-size:24px;font-style:italic;color:#2E6A91">р. Амур</p>
+<p style="position:absolute;left:470px;top:612px;width:170px;font-size:24px;font-style:italic;color:#2E6A91">р. Сунгари</p>
+<p style="position:absolute;left:850px;top:584px;width:140px;font-size:24px;font-style:italic;color:#2E6A91">р. Уссури</p>
+<p style="position:absolute;left:768px;top:752px;width:140px;font-size:24px;font-style:italic;color:#2E6A91">оз. Ханка</p>
+<p style="position:absolute;left:231px;top:172px;width:120px;font-size:24px;color:#1B2A3D">Мохэ</p>
+<p style="position:absolute;left:494px;top:362px;width:120px;font-size:24px;color:#1B2A3D">Хэйхэ</p>
+<p style="position:absolute;left:160px;top:568px;width:132px;font-size:24px;color:#1B2A3D;text-align:right">Цицикар</p>
+<p style="position:absolute;left:362px;top:616px;width:120px;font-size:24px;color:#1B2A3D">Дацин</p>
+<p style="position:absolute;left:640px;top:600px;width:140px;font-size:24px;color:#1B2A3D">Цзямусы</p>
+<p style="position:absolute;left:604px;top:758px;width:180px;font-size:24px;color:#1B2A3D">Муданьцзян</p>
+<p style="position:absolute;left:452px;top:672px;width:200px;font-size:32px;font-weight:700;color:#C8102E">Харбин</p>
+<p style="position:absolute;left:128px;top:904px;width:400px;font-size:24px;color:#56657A">Схематичная карта</p>
+<p style="position:absolute;left:1000px;top:128px;width:792px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#C8102E">Географическое положение</p>
+<h2 style="position:absolute;left:1000px;top:168px;width:792px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#0F1B2D">Провинция и её соседи</h2>
+<div data-build-in="rise order 3" style="position:absolute;left:1000px;top:300px;width:792px;background:#FBFCFD;border-radius:20px;padding:24px 32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:Oswald, Arial, sans-serif;font-size:44px;line-height:1.2;color:#C8102E">Россия — 4 региона</p>
+<p style="font-size:24px;color:#3C4A5C">Амурская обл., Еврейская АО, Хабаровский и Приморский края</p>
+</div>
+<div data-build-in="rise order 4" style="position:absolute;left:1000px;top:470px;width:792px;background:#FBFCFD;border-radius:20px;padding:24px 32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:Oswald, Arial, sans-serif;font-size:44px;line-height:1.2;color:#C8102E">&gt; 3000 км</p>
+<p style="font-size:24px;color:#3C4A5C">граница с Россией по Амуру и Уссури</p>
+</div>
+<div data-build-in="rise order 5" style="position:absolute;left:1000px;top:625px;width:792px;background:#FBFCFD;border-radius:20px;padding:24px 32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:Oswald, Arial, sans-serif;font-size:44px;line-height:1.2;color:#C8102E">Внутри Китая</p>
+<p style="font-size:24px;color:#3C4A5C">Внутренняя Монголия на западе, Цзилинь на юге</p>
+</div>
+<div data-build-in="rise order 6" style="position:absolute;left:1000px;top:780px;width:792px;background:#FBFCFD;border-radius:20px;padding:24px 32px;display:flex;flex-direction:row;gap:48px">
+<p style="font-size:24px;color:#3C4A5C"><b>473 тыс. км²</b> площадь</p>
+<p style="font-size:24px;color:#3C4A5C"><b>≈ 31 млн</b> жителей</p>
+</div>
+<aside>Посмотрим на провинцию крупнее. Розовым выделен Хэйлунцзян, серым — территория России. На севере и востоке по рекам Амур и Уссури провинция граничит с четырьмя российскими регионами: Амурской областью, Еврейской автономной областью, Хабаровским и Приморским краями. Граница длиннее трёх тысяч километров. Внутри Китая её соседи — Внутренняя Монголия на западе и провинция Цзилинь на юге. Площадь — 473 тысячи квадратных километров, это чуть меньше Испании. Живёт здесь около 31 миллиона человек. Красным отмечена столица — Харбин.</aside>
+</section>
+<section id="name" data-transition="push" style="background:#EEF3F6;color:#1B2A3D;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#C8102E">Название</p>
+<h2 style="position:absolute;left:128px;top:168px;width:1160px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#0F1B2D">Почему «Чёрный дракон»?</h2>
+<div data-build-in="pop order 1" style="position:absolute;left:128px;top:320px;width:480px;height:440px;background:#FBFCFD;border-radius:24px;box-shadow:0px 8px 24px rgba(15,27,45,0.08);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px">
+<p style="font-family:'Noto Serif SC', serif;font-size:200px;line-height:1.1;color:#C8102E">黑</p>
+<p style="font-size:32px;color:#3C4A5C">hēi</p>
+<p style="font-family:Oswald, Arial, sans-serif;font-size:44px;color:#0F1B2D">«чёрный»</p>
+</div>
+<div data-build-in="pop order 2" style="position:absolute;left:720px;top:320px;width:480px;height:440px;background:#FBFCFD;border-radius:24px;box-shadow:0px 8px 24px rgba(15,27,45,0.08);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px">
+<p style="font-family:'Noto Serif SC', serif;font-size:200px;line-height:1.1;color:#C8102E">龙</p>
+<p style="font-size:32px;color:#3C4A5C">lóng</p>
+<p style="font-family:Oswald, Arial, sans-serif;font-size:44px;color:#0F1B2D">«дракон»</p>
+</div>
+<div data-build-in="pop order 3" style="position:absolute;left:1312px;top:320px;width:480px;height:440px;background:#FBFCFD;border-radius:24px;box-shadow:0px 8px 24px rgba(15,27,45,0.08);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px">
+<p style="font-family:'Noto Serif SC', serif;font-size:200px;line-height:1.1;color:#C8102E">江</p>
+<p style="font-size:32px;color:#3C4A5C">jiāng</p>
+<p style="font-family:Oswald, Arial, sans-serif;font-size:44px;color:#0F1B2D">«река»</p>
+</div>
+<p data-build-in="rise order 4" style="position:absolute;left:128px;top:820px;width:1664px;font-size:44px;font-weight:700;line-height:1.3;color:#0F1B2D;text-align:center">Вместе — «Река Чёрного дракона». Так китайцы называют Амур.</p>
+<svg aria-label="Мини-карта провинции" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><polygon points="22,50 100,30 160,34 250,66 322,122 346,178 370,242 400,298 460,346 520,362 592,402 604,474 640,498 700,498 760,466 832,450 856,438 826,506 790,554 766,610 730,666 688,698 658,722 622,746 616,794 586,838 550,802 508,786 454,762 406,746 364,714 316,698 268,690 220,674 184,634 166,570 202,506 220,450 262,378 280,314 214,266 130,234 58,194 34,122" fill="#FBFCFD" stroke="#0F1B2D" stroke-width="16" stroke-linejoin="round"/></svg>
+<svg aria-label="На мини-карте отмечен Амур" data-build-in="pop auto" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><polyline points="22,50 100,30 160,34 250,66 322,122 346,178 370,242 400,298 460,346 520,362 592,402 604,474 640,498 700,498 760,466 832,450 856,438" fill="none" stroke="#C8102E" stroke-width="44" stroke-linejoin="round" stroke-linecap="round"/></svg>
+<p data-build-in="fade auto" style="position:absolute;left:1300px;top:180px;width:330px;font-size:24px;font-weight:700;color:#C8102E;text-align:right">Амур</p>
+<aside>Теперь о названии. Хэйлунцзян пишется тремя иероглифами. Первый, «хэй», значит «чёрный». Второй, «лун», — «дракон». Третий, «цзян», — «река». Вместе получается «Река Чёрного дракона». Так в Китае называют Амур, большую реку, по которой проходит граница с Россией. Провинция получила имя в честь этой реки.</aside>
+</section>
+<section id="relief" data-transition="push" style="background:#EEF3F6;color:#1B2A3D;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#C8102E">Рельеф</p>
+<h2 style="position:absolute;left:128px;top:168px;width:1160px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#0F1B2D">Горы по краям, равнины в центре</h2>
+<svg aria-label="Схема рельефа с запада на восток: горы по краям и широкая равнина в центре" data-build-in="rise order 1" style="position:absolute;left:128px;top:340px;width:1664px;height:220px" width="1664" height="220" viewBox="0 0 1664 220" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 220 L0 120 L120 30 L240 110 L330 60 L470 170 L1200 175 L1320 80 L1420 130 L1520 40 L1664 120 L1664 220 Z" fill="#2E4A6B"/>
+<path d="M470 170 L1200 175 L1200 220 L470 220 Z" fill="#6E8B5A"/>
+<rect x="760" y="166" width="220" height="10" rx="5" fill="#3A7CA5"/>
+</svg>
+<p style="position:absolute;left:128px;top:296px;width:600px;font-size:24px;font-weight:700;color:#2E4A6B">← запад · Большой Хинган</p>
+<p style="position:absolute;left:1092px;top:296px;width:700px;font-size:24px;font-weight:700;color:#2E4A6B;text-align:right">Чжангуанцай-Лин, Ваньдашань · восток →</p>
+<p data-build-in="fade order 1" style="position:absolute;left:585px;top:448px;width:500px;font-size:24px;font-weight:700;color:#4D6B3C;text-align:center">равнины и поля</p>
+<div data-build-in="rise order 2" style="position:absolute;left:128px;top:610px;width:808px;background:#FBFCFD;border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:16px">
+<h3 style="font-family:Oswald, Arial, sans-serif;font-size:44px;font-weight:600;color:#0F1B2D">Горы по краям</h3>
+<ul style="font-size:32px;line-height:1.4;color:#3C4A5C">
+<li>Большой Хинган — запад</li>
+<li>Малый Хинган — север</li>
+<li>Чжангуанцай-Лин и Ваньдашань — восток</li>
+</ul>
+</div>
+<div data-build-in="rise order 3" style="position:absolute;left:984px;top:610px;width:808px;background:#FBFCFD;border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:16px">
+<h3 style="font-family:Oswald, Arial, sans-serif;font-size:44px;font-weight:600;color:#0F1B2D">Равнины в центре</h3>
+<ul style="font-size:32px;line-height:1.4;color:#3C4A5C">
+<li>Сунгари-Нэньцзянская равнина</li>
+<li>Саньцзянская — «равнина трёх рек»</li>
+<li>Здесь главные поля провинции</li>
+</ul>
+</div>
+<svg aria-label="Мини-карта провинции" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><polygon points="22,50 100,30 160,34 250,66 322,122 346,178 370,242 400,298 460,346 520,362 592,402 604,474 640,498 700,498 760,466 832,450 856,438 826,506 790,554 766,610 730,666 688,698 658,722 622,746 616,794 586,838 550,802 508,786 454,762 406,746 364,714 316,698 268,690 220,674 184,634 166,570 202,506 220,450 262,378 280,314 214,266 130,234 58,194 34,122" fill="#FBFCFD" stroke="#0F1B2D" stroke-width="16" stroke-linejoin="round"/></svg>
+<svg aria-label="На мини-карте отмечены горы по краям провинции" data-build-in="pop auto" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><path d="M70 250 l50 -90 l50 90 z M150 300 l50 -90 l50 90 z M400 450 l50 -90 l50 90 z M560 730 l50 -90 l50 90 z M640 660 l50 -90 l50 90 z" fill="#C8102E"/></svg>
+<p data-build-in="fade auto" style="position:absolute;left:1300px;top:180px;width:330px;font-size:24px;font-weight:700;color:#C8102E;text-align:right">горы по краям</p>
+<aside>Рельеф провинции похож на чашу. По краям стоят горы: на западе Большой Хинган, на севере Малый Хинган, на востоке хребты Чжангуанцай-Лин и Ваньдашань. Горы в основном невысокие и покрыты лесом. А в центре лежат огромные равнины: Сунгари-Нэньцзянская и Саньцзянская, название которой значит «равнина трёх рек». Именно на равнинах находятся главные поля провинции.</aside>
+</section>
+<section id="climate" data-transition="fade" style="background:#0F1B2D;color:#EEF3F6;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#F26B6B">Климат</p>
+<h2 style="position:absolute;left:128px;top:168px;width:1160px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#EEF3F6">Самая холодная провинция Китая</h2>
+<p data-build-in="pop order 1" style="position:absolute;left:128px;top:340px;width:920px;font-family:Oswald, Arial, sans-serif;font-size:200px;font-weight:700;line-height:1.1;color:#F26B6B">−52,3 °C</p>
+<p data-build-in="fade order 1" style="position:absolute;left:128px;top:590px;width:860px;font-size:32px;line-height:1.4;color:#C9D6E3">рекорд холода Китая: посёлок Мохэ на самом севере провинции, 1969 год</p>
+<div data-build-in="rise order 2" style="position:absolute;left:1120px;top:330px;width:672px;background:#1A2B44;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:Oswald, Arial, sans-serif;font-size:44px;line-height:1.2;color:#EEF3F6">≈ −18 °C</p>
+<p style="font-size:24px;color:#C9D6E3">средняя температура января в Харбине</p>
+</div>
+<div data-build-in="rise order 3" style="position:absolute;left:1120px;top:520px;width:672px;background:#1A2B44;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:Oswald, Arial, sans-serif;font-size:44px;line-height:1.2;color:#EEF3F6">≈ +23 °C</p>
+<p style="font-size:24px;color:#C9D6E3">средняя температура июля: лето короткое и дождливое</p>
+</div>
+<div data-build-in="rise order 4" style="position:absolute;left:1120px;top:710px;width:672px;background:#1A2B44;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:Oswald, Arial, sans-serif;font-size:44px;line-height:1.2;color:#EEF3F6">≈ 5 месяцев</p>
+<p style="font-size:24px;color:#C9D6E3">длится зима — снег лежит с ноября по март</p>
+</div>
+<svg aria-label="Мини-карта провинции" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><polygon points="22,50 100,30 160,34 250,66 322,122 346,178 370,242 400,298 460,346 520,362 592,402 604,474 640,498 700,498 760,466 832,450 856,438 826,506 790,554 766,610 730,666 688,698 658,722 622,746 616,794 586,838 550,802 508,786 454,762 406,746 364,714 316,698 268,690 220,674 184,634 166,570 202,506 220,450 262,378 280,314 214,266 130,234 58,194 34,122" fill="#1A2B44" stroke="#C9D6E3" stroke-width="16" stroke-linejoin="round"/></svg>
+<svg aria-label="На мини-карте отмечен посёлок Мохэ" data-build-in="pop auto" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><circle cx="100" cy="74" r="64" fill="#F26B6B"/></svg>
+<p data-build-in="fade auto" style="position:absolute;left:1300px;top:180px;width:330px;font-size:24px;font-weight:700;color:#F26B6B;text-align:right">Мохэ</p>
+<aside>Климат здесь резко континентальный и муссонный. Зима длинная, около пяти месяцев, и очень холодная. В Харбине в январе в среднем около минус восемнадцати градусов. А в посёлке Мохэ на самом севере провинции в 1969 году зафиксировали рекорд холода для всего Китая — минус 52,3 градуса. Лето короткое, но тёплое и дождливое: в июле около плюс двадцати трёх. Этого тепла и влаги хватает, чтобы вырос хороший урожай.</aside>
+</section>
+<section id="rivers" data-transition="push" style="background:#EEF3F6;color:#1B2A3D;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#C8102E">Внутренние воды</p>
+<h2 style="position:absolute;left:128px;top:168px;width:1160px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#0F1B2D">Реки и озёра бассейна Амура</h2>
+<div data-build-in="left order 1" style="position:absolute;left:128px;top:310px;width:1664px;height:104px;background:#FBFCFD;border-radius:20px;border-left:8px solid #3A7CA5;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:300px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#0F1B2D">Амур</p>
+<p style="width:220px;font-family:'Noto Serif SC', serif;font-size:44px;color:#C8102E">黑龙江</p>
+<p style="flex:1;font-size:32px;line-height:1.3;color:#3C4A5C">граница с Россией на севере, одна из крупнейших рек Азии</p>
+</div>
+<div data-build-in="left order 2" style="position:absolute;left:128px;top:434px;width:1664px;height:104px;background:#FBFCFD;border-radius:20px;border-left:8px solid #3A7CA5;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:300px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#0F1B2D">Уссури</p>
+<p style="width:220px;font-family:'Noto Serif SC', serif;font-size:44px;color:#C8102E">乌苏里江</p>
+<p style="flex:1;font-size:32px;line-height:1.3;color:#3C4A5C">граница с Россией на востоке</p>
+</div>
+<div data-build-in="left order 3" style="position:absolute;left:128px;top:558px;width:1664px;height:104px;background:#FBFCFD;border-radius:20px;border-left:8px solid #3A7CA5;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:300px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#0F1B2D">Сунгари</p>
+<p style="width:220px;font-family:'Noto Serif SC', serif;font-size:44px;color:#C8102E">松花江</p>
+<p style="flex:1;font-size:32px;line-height:1.3;color:#3C4A5C">главная река внутри провинции, течёт через Харбин</p>
+</div>
+<div data-build-in="left order 4" style="position:absolute;left:128px;top:682px;width:1664px;height:104px;background:#FBFCFD;border-radius:20px;border-left:8px solid #3A7CA5;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:300px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#0F1B2D">Нэньцзян</p>
+<p style="width:220px;font-family:'Noto Serif SC', serif;font-size:44px;color:#C8102E">嫩江</p>
+<p style="flex:1;font-size:32px;line-height:1.3;color:#3C4A5C">крупнейший приток Сунгари, на западе провинции</p>
+</div>
+<div data-build-in="left order 5" style="position:absolute;left:128px;top:806px;width:1664px;height:104px;background:#FBFCFD;border-radius:20px;border-left:8px solid #3A7CA5;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:300px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#0F1B2D">оз. Ханка</p>
+<p style="width:220px;font-family:'Noto Serif SC', serif;font-size:44px;color:#C8102E">兴凯湖</p>
+<p style="flex:1;font-size:32px;line-height:1.3;color:#3C4A5C">озеро на границе: часть в Китае, часть в России</p>
+</div>
+<svg aria-label="Мини-карта провинции" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><polygon points="22,50 100,30 160,34 250,66 322,122 346,178 370,242 400,298 460,346 520,362 592,402 604,474 640,498 700,498 760,466 832,450 856,438 826,506 790,554 766,610 730,666 688,698 658,722 622,746 616,794 586,838 550,802 508,786 454,762 406,746 364,714 316,698 268,690 220,674 184,634 166,570 202,506 220,450 262,378 280,314 214,266 130,234 58,194 34,122" fill="#FBFCFD" stroke="#0F1B2D" stroke-width="16" stroke-linejoin="round"/></svg>
+<svg aria-label="На мини-карте отмечены реки бассейна Амура" data-build-in="pop auto" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><polyline points="22,50 100,30 160,34 250,66 322,122 346,178 370,242 400,298 460,346 520,362 592,402 604,474 640,498 700,498 760,466 832,450 856,438 826,506 790,554 766,610 730,666 688,698 658,722" fill="none" stroke="#C8102E" stroke-width="40" stroke-linejoin="round" stroke-linecap="round"/><polyline points="250,674 300,680 346,654 420,640 500,606 568,570 640,520 700,498" fill="none" stroke="#C8102E" stroke-width="32" stroke-linejoin="round" stroke-linecap="round"/><polyline points="262,330 250,400 226,470 214,540 218,610 250,674" fill="none" stroke="#C8102E" stroke-width="32" stroke-linejoin="round" stroke-linecap="round"/></svg>
+<p data-build-in="fade auto" style="position:absolute;left:1300px;top:180px;width:330px;font-size:24px;font-weight:700;color:#C8102E;text-align:right">бассейн Амура</p>
+<aside>Почти все реки провинции относятся к бассейну Амура. Амур — граница с Россией на севере, это одна из крупнейших рек Азии. Уссури — граница на востоке. Главная река внутри провинции — Сунгари, на её берегах стоит Харбин. Крупнейший приток Сунгари — река Нэньцзян на западе. А на юго-востоке есть большое озеро Ханка: одна его часть принадлежит Китаю, другая — России.</aside>
+</section>
+<section id="grain" data-transition="fade" style="background:#EEF3F6;color:#1B2A3D;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#C8102E">Сельское хозяйство</p>
+<h2 style="position:absolute;left:128px;top:168px;width:1160px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#0F1B2D">Житница Китая</h2>
+<p data-build-in="pop order 1" style="position:absolute;left:128px;top:310px;width:700px;font-family:Oswald, Arial, sans-serif;font-size:200px;font-weight:700;line-height:1.1;color:#C8102E">≈ 11 %</p>
+<p data-build-in="fade order 1" style="position:absolute;left:128px;top:560px;width:700px;font-size:32px;line-height:1.4;color:#3C4A5C">всего зерна Китая выращивают здесь. С 2011 года провинция — первая в стране по сбору зерна</p>
+<div data-build-in="rise order 2" style="position:absolute;left:900px;top:320px;width:892px;background:#FBFCFD;border-radius:20px;padding:24px 32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:Oswald, Arial, sans-serif;font-size:44px;line-height:1.2;color:#0F1B2D">Соя</p>
+<p style="font-size:24px;color:#3C4A5C">главный соевый район страны</p>
+</div>
+<div data-build-in="rise order 3" style="position:absolute;left:900px;top:470px;width:892px;background:#FBFCFD;border-radius:20px;padding:24px 32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:Oswald, Arial, sans-serif;font-size:44px;line-height:1.2;color:#0F1B2D">Кукуруза</p>
+<p style="font-size:24px;color:#3C4A5C">огромные поля на равнинах в центре провинции</p>
+</div>
+<div data-build-in="rise order 4" style="position:absolute;left:900px;top:620px;width:892px;background:#FBFCFD;border-radius:20px;padding:24px 32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:Oswald, Arial, sans-serif;font-size:44px;line-height:1.2;color:#0F1B2D">Рис</p>
+<p style="font-size:24px;color:#3C4A5C">знаменитый рис из города Учан известен по всему Китаю</p>
+</div>
+<div data-build-in="rise order 5" style="position:absolute;left:128px;top:790px;width:1664px;background:#0F1B2D;border-radius:20px;padding:28px 40px">
+<p style="font-size:28px;line-height:1.4;color:#EEF3F6"><b>Секрет — чернозём:</b> это один из четырёх великих чернозёмных районов мира. В XX веке здесь распахали целину — «Великую северную пустошь» Бэйдахуан.</p>
+</div>
+<svg aria-label="Мини-карта провинции" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><polygon points="22,50 100,30 160,34 250,66 322,122 346,178 370,242 400,298 460,346 520,362 592,402 604,474 640,498 700,498 760,466 832,450 856,438 826,506 790,554 766,610 730,666 688,698 658,722 622,746 616,794 586,838 550,802 508,786 454,762 406,746 364,714 316,698 268,690 220,674 184,634 166,570 202,506 220,450 262,378 280,314 214,266 130,234 58,194 34,122" fill="#FBFCFD" stroke="#0F1B2D" stroke-width="16" stroke-linejoin="round"/></svg>
+<svg aria-label="На мини-карте отмечены главные равнины" data-build-in="pop auto" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><ellipse cx="290" cy="590" rx="120" ry="85" fill="#C8102E"/><ellipse cx="700" cy="560" rx="105" ry="65" fill="#C8102E"/></svg>
+<p data-build-in="fade auto" style="position:absolute;left:1300px;top:180px;width:330px;font-size:24px;font-weight:700;color:#C8102E;text-align:right">главные равнины</p>
+<aside>Хэйлунцзян называют житницей Китая. Здесь лежат плодородные чернозёмы: это один из четырёх великих чернозёмных районов мира. С 2011 года провинция занимает первое место в Китае по сбору зерна, здесь выращивают примерно одиннадцать процентов всего зерна страны. Главные культуры — соя, кукуруза и рис. Особенно знаменит рис из города Учан. А в двадцатом веке здесь распахали целину, которую называли «Великой северной пустошью» — Бэйдахуан.</aside>
+</section>
+<section id="industry" data-transition="fade" style="background:#0F1B2D;color:#EEF3F6;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#F26B6B">Ресурсы и промышленность</p>
+<h2 style="position:absolute;left:128px;top:168px;width:1160px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#EEF3F6">Леса, нефть и заводы</h2>
+<div data-build-in="rise order 1" style="position:absolute;left:128px;top:320px;width:526px;background:#1A2B44;border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:12px">
+<p style="font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;color:#F26B6B">≈ 47 %</p>
+<h3 style="font-family:Oswald, Arial, sans-serif;font-size:44px;font-weight:600;color:#EEF3F6">Леса</h3>
+<p style="font-size:32px;line-height:1.4;color:#C9D6E3">территории покрыто тайгой Хинганов</p>
+</div>
+<div data-build-in="rise order 2" style="position:absolute;left:697px;top:320px;width:526px;background:#1A2B44;border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:12px">
+<p style="font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;color:#F26B6B">1959</p>
+<h3 style="font-family:Oswald, Arial, sans-serif;font-size:44px;font-weight:600;color:#EEF3F6">Нефть</h3>
+<p style="font-size:32px;line-height:1.4;color:#C9D6E3">открыто месторождение Дацин — символ промышленности КНР</p>
+</div>
+<div data-build-in="rise order 3" style="position:absolute;left:1266px;top:320px;width:526px;background:#1A2B44;border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:12px">
+<p style="font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;color:#F26B6B">1950-е</p>
+<h3 style="font-family:Oswald, Arial, sans-serif;font-size:44px;font-weight:600;color:#EEF3F6">Заводы</h3>
+<p style="font-size:32px;line-height:1.4;color:#C9D6E3">Харбин — центр машиностроения: турбины, самолёты</p>
+</div>
+<div data-build-in="fade order 4" style="position:absolute;left:128px;top:760px;width:1664px;background:#1A2B44;border-left:8px solid #F26B6B;border-radius:12px;padding:28px 40px">
+<p style="font-size:32px;line-height:1.4;color:#EEF3F6">С 1990-х многие старые заводы закрылись — это называют «северо-восточным феноменом». С 2003 года действует программа «Возрождение Северо-Востока».</p>
+</div>
+<svg aria-label="Мини-карта провинции" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><polygon points="22,50 100,30 160,34 250,66 322,122 346,178 370,242 400,298 460,346 520,362 592,402 604,474 640,498 700,498 760,466 832,450 856,438 826,506 790,554 766,610 730,666 688,698 658,722 622,746 616,794 586,838 550,802 508,786 454,762 406,746 364,714 316,698 268,690 220,674 184,634 166,570 202,506 220,450 262,378 280,314 214,266 130,234 58,194 34,122" fill="#1A2B44" stroke="#C9D6E3" stroke-width="16" stroke-linejoin="round"/></svg>
+<svg aria-label="На мини-карте отмечены Дацин и Харбин" data-build-in="pop auto" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><circle cx="240" cy="580" r="56" fill="#F26B6B"/><circle cx="360" cy="660" r="56" fill="#F26B6B"/></svg>
+<p data-build-in="fade auto" style="position:absolute;left:1300px;top:180px;width:330px;font-size:24px;font-weight:700;color:#F26B6B;text-align:right">Дацин и Харбин</p>
+<aside>Кроме зерна, у провинции много других богатств. Почти половина её территории покрыта лесами — это тайга Большого и Малого Хингана. В 1959 году здесь открыли нефтяное месторождение Дацин, оно стало символом промышленности Китая. А с 1950-х годов Харбин — центр машиностроения: здесь делают турбины для электростанций, самолёты и вертолёты. Но с 1990-х многие старые заводы закрылись, и люди стали уезжать на юг. Это называют «северо-восточным феноменом». С 2003 года государство поддерживает регион программой «Возрождение Северо-Востока».</aside>
+</section>
+<section id="nature" data-transition="push" style="background:#EEF3F6;color:#1B2A3D;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#C8102E">Уникальная природа</p>
+<h2 style="position:absolute;left:128px;top:168px;width:1160px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#0F1B2D">Вулканы и журавли</h2>
+<div data-build-in="left order 1" style="position:absolute;left:128px;top:310px;width:808px;background:#FBFCFD;border-radius:24px;padding:48px;display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'Noto Serif SC', serif;font-size:72px;line-height:1.1;color:#C8102E">五大连池</p>
+<h3 style="font-family:Oswald, Arial, sans-serif;font-size:44px;font-weight:600;line-height:1.2;color:#0F1B2D">Удаляньчи — «Пять соединённых озёр»</h3>
+<ul style="font-size:32px;line-height:1.4;color:#3C4A5C">
+<li>14 вулканов и 5 озёр из застывшей лавы</li>
+<li>последнее извержение — 1719–1721 годы</li>
+<li>Всемирный геопарк ЮНЕСКО</li>
+</ul>
+</div>
+<div data-build-in="right order 2" style="position:absolute;left:984px;top:310px;width:808px;background:#FBFCFD;border-radius:24px;padding:48px;display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'Noto Serif SC', serif;font-size:72px;line-height:1.1;color:#C8102E">扎龙</p>
+<h3 style="font-family:Oswald, Arial, sans-serif;font-size:44px;font-weight:600;line-height:1.2;color:#0F1B2D">Чжалун — край журавлей</h3>
+<ul style="font-size:32px;line-height:1.4;color:#3C4A5C">
+<li>огромные болота возле Цицикара</li>
+<li>дом японского (красноголового) журавля</li>
+<li>охраняется Рамсарской конвенцией</li>
+</ul>
+</div>
+<svg aria-label="Мини-карта провинции" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><polygon points="22,50 100,30 160,34 250,66 322,122 346,178 370,242 400,298 460,346 520,362 592,402 604,474 640,498 700,498 760,466 832,450 856,438 826,506 790,554 766,610 730,666 688,698 658,722 622,746 616,794 586,838 550,802 508,786 454,762 406,746 364,714 316,698 268,690 220,674 184,634 166,570 202,506 220,450 262,378 280,314 214,266 130,234 58,194 34,122" fill="#FBFCFD" stroke="#0F1B2D" stroke-width="16" stroke-linejoin="round"/></svg>
+<svg aria-label="На мини-карте отмечены Удаляньчи и Чжалун" data-build-in="pop auto" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><circle cx="322" cy="418" r="56" fill="#C8102E"/><circle cx="215" cy="545" r="56" fill="#C8102E"/></svg>
+<p data-build-in="fade auto" style="position:absolute;left:1300px;top:180px;width:330px;font-size:24px;font-weight:700;color:#C8102E;text-align:right">Удаляньчи и Чжалун</p>
+<aside>В провинции есть уникальные природные места. Удаляньчи — это четырнадцать вулканов и пять озёр, которые появились, когда лава перегородила реку. Последнее извержение было около трёхсот лет назад, в 1719–1721 годах. Сейчас это Всемирный геопарк ЮНЕСКО. А заповедник Чжалун возле Цицикара — огромные болота, где гнездится японский, или красноголовый, журавль. В Китае эта птица — символ долголетия, а сами болота охраняются международной Рамсарской конвенцией.</aside>
+</section>
+<section id="people" data-transition="fade" style="background:#EEF3F6;color:#1B2A3D;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#C8102E">Население</p>
+<h2 style="position:absolute;left:128px;top:168px;width:1160px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#0F1B2D">Люди и народы</h2>
+<p data-build-in="pop order 1" style="position:absolute;left:128px;top:310px;width:820px;font-family:Oswald, Arial, sans-serif;font-size:200px;font-weight:700;line-height:1.1;color:#C8102E">≈ 31 млн</p>
+<p data-build-in="fade order 1" style="position:absolute;left:128px;top:560px;width:760px;font-size:32px;line-height:1.4;color:#3C4A5C">жителей. Население сокращается: молодёжь уезжает учиться и работать на юг</p>
+<p data-build-in="fade order 4" style="position:absolute;left:128px;top:740px;width:760px;font-size:32px;line-height:1.4;color:#3C4A5C"><b>В древности</b> здесь жили чжурчжэни — предки маньчжуров, основавшие империю Цзинь</p>
+<div data-build-in="rise order 2" style="position:absolute;left:1000px;top:310px;width:792px;display:flex;flex-direction:row;flex-wrap:wrap;gap:16px">
+<p style="font-size:32px;color:#0F1B2D;background:#FBFCFD;border-radius:40px;padding:12px 28px">маньчжуры</p>
+<p style="font-size:32px;color:#0F1B2D;background:#FBFCFD;border-radius:40px;padding:12px 28px">корейцы</p>
+<p style="font-size:32px;color:#0F1B2D;background:#FBFCFD;border-radius:40px;padding:12px 28px">монголы</p>
+<p style="font-size:32px;color:#0F1B2D;background:#FBFCFD;border-radius:40px;padding:12px 28px">хуэй</p>
+<p style="font-size:32px;color:#0F1B2D;background:#FBFCFD;border-radius:40px;padding:12px 28px">дауры</p>
+<p style="font-size:32px;color:#0F1B2D;background:#FBFCFD;border-radius:40px;padding:12px 28px">эвенки</p>
+<p style="font-size:32px;color:#0F1B2D;background:#FBFCFD;border-radius:40px;padding:12px 28px">орочоны</p>
+<p style="font-size:32px;color:#FBFCFD;background:#C8102E;border-radius:40px;padding:12px 28px">хэчжэ</p>
+</div>
+<div data-build-in="rise order 3" style="position:absolute;left:1000px;top:600px;width:792px;background:#0F1B2D;border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:12px">
+<h3 style="font-family:Oswald, Arial, sans-serif;font-size:44px;font-weight:600;color:#EEF3F6">Хэчжэ — родня нанайцев</h3>
+<p style="font-size:32px;line-height:1.4;color:#C9D6E3">Около 5 тысяч человек. Рыболовы, которые раньше шили одежду из рыбьей кожи</p>
+</div>
+<svg aria-label="Мини-карта провинции" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><polygon points="22,50 100,30 160,34 250,66 322,122 346,178 370,242 400,298 460,346 520,362 592,402 604,474 640,498 700,498 760,466 832,450 856,438 826,506 790,554 766,610 730,666 688,698 658,722 622,746 616,794 586,838 550,802 508,786 454,762 406,746 364,714 316,698 268,690 220,674 184,634 166,570 202,506 220,450 262,378 280,314 214,266 130,234 58,194 34,122" fill="#FBFCFD" stroke="#0F1B2D" stroke-width="16" stroke-linejoin="round"/></svg>
+<svg aria-label="На мини-карте отмечены крупные города" data-build-in="pop auto" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><circle cx="110" cy="84" r="40" fill="#C8102E"/><circle cx="400" cy="300" r="40" fill="#C8102E"/><circle cx="215" cy="526" r="40" fill="#C8102E"/><circle cx="260" cy="590" r="40" fill="#C8102E"/><circle cx="346" cy="654" r="40" fill="#C8102E"/><circle cx="568" cy="570" r="40" fill="#C8102E"/><circle cx="526" cy="740" r="40" fill="#C8102E"/></svg>
+<p data-build-in="fade auto" style="position:absolute;left:1300px;top:180px;width:330px;font-size:24px;font-weight:700;color:#C8102E;text-align:right">крупные города</p>
+<aside>В провинции живёт около 31 миллиона человек. Но население уменьшается: молодёжь уезжает учиться и работать на юг Китая. Большинство жителей — ханьцы, то есть китайцы. Но здесь живут и другие народы: маньчжуры, корейцы, монголы, хуэй, дауры, эвенки и орочоны. Один из самых маленьких народов Китая — хэчжэ, родственники наших нанайцев. Их всего около пяти тысяч. Раньше они ловили рыбу и даже шили одежду из рыбьей кожи. А в древности здесь жили чжурчжэни — предки маньчжуров, которые основали империю Цзинь.</aside>
+</section>
+<section id="harbin" data-transition="fade" style="background:#0F1B2D;color:#EEF3F6;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#F26B6B">Столица провинции</p>
+<h2 style="position:absolute;left:128px;top:168px;width:1160px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#EEF3F6">Харбин: от КВЖД до ледяных городов</h2>
+<hr style="position:absolute;left:128px;top:477px;width:1664px;border-top:4px solid #2E4A6B">
+<div data-build-in="rise order 1" style="position:absolute;left:128px;top:360px;width:368px;display:flex;flex-direction:column;gap:24px">
+<p style="font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;color:#F26B6B">1898</p>
+<div style="width:32px;height:32px;background:#F26B6B;border-radius:50%"></div>
+<p style="font-size:32px;line-height:1.4;color:#C9D6E3">Россия начинает строить КВЖД — рождение города</p>
+</div>
+<div data-build-in="rise order 2" style="position:absolute;left:560px;top:360px;width:368px;display:flex;flex-direction:column;gap:24px">
+<p style="font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;color:#F26B6B">1932</p>
+<div style="width:32px;height:32px;background:#F26B6B;border-radius:50%"></div>
+<p style="font-size:32px;line-height:1.4;color:#C9D6E3">достроен собор Святой Софии — символ русского Харбина</p>
+</div>
+<div data-build-in="rise order 3" style="position:absolute;left:992px;top:360px;width:368px;display:flex;flex-direction:column;gap:24px">
+<p style="font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;color:#F26B6B">1985</p>
+<div style="width:32px;height:32px;background:#F26B6B;border-radius:50%"></div>
+<p style="font-size:32px;line-height:1.4;color:#C9D6E3">первый фестиваль льда и снега</p>
+</div>
+<div data-build-in="rise order 4" style="position:absolute;left:1424px;top:360px;width:368px;display:flex;flex-direction:column;gap:24px">
+<p style="font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;color:#F26B6B">2025</p>
+<div style="width:32px;height:32px;background:#F26B6B;border-radius:50%"></div>
+<p style="font-size:32px;line-height:1.4;color:#C9D6E3">Харбин принимает IX Азиатские зимние игры</p>
+</div>
+<p data-build-in="fade order 5" style="position:absolute;left:128px;top:800px;width:1664px;font-family:Oswald, Arial, sans-serif;font-size:44px;line-height:1.3;color:#EEF3F6">Из-за русской архитектуры Харбин называли «Восточной Москвой»</p>
+<svg aria-label="Мини-карта провинции" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><polygon points="22,50 100,30 160,34 250,66 322,122 346,178 370,242 400,298 460,346 520,362 592,402 604,474 640,498 700,498 760,466 832,450 856,438 826,506 790,554 766,610 730,666 688,698 658,722 622,746 616,794 586,838 550,802 508,786 454,762 406,746 364,714 316,698 268,690 220,674 184,634 166,570 202,506 220,450 262,378 280,314 214,266 130,234 58,194 34,122" fill="#1A2B44" stroke="#C9D6E3" stroke-width="16" stroke-linejoin="round"/></svg>
+<svg aria-label="На мини-карте отмечен Харбин" data-build-in="pop auto" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><circle cx="346" cy="654" r="72" fill="#F26B6B"/></svg>
+<p data-build-in="fade auto" style="position:absolute;left:1300px;top:180px;width:330px;font-size:24px;font-weight:700;color:#F26B6B;text-align:right">Харбин</p>
+<aside>Теперь о Харбине. Город появился в 1898 году, когда Россия начала строить здесь Китайско-Восточную железную дорогу, КВЖД. Сюда приехали тысячи русских, и Харбин стал похож на русский город, его даже называли «Восточной Москвой». Символ того времени — собор Святой Софии, его достроили в 1932 году. Сегодня Харбин знаменит фестивалем льда и снега: с 1985 года каждую зиму здесь строят целые города изо льда. А в 2025 году Харбин принимал Азиатские зимние игры.</aside>
+</section>
+<section id="russia" data-transition="push" style="background:#EEF3F6;color:#1B2A3D;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#C8102E">Связи с Россией</p>
+<h2 style="position:absolute;left:128px;top:168px;width:1160px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#0F1B2D">Ворота Китая в Россию</h2>
+<div data-build-in="left order 1" style="position:absolute;left:128px;top:320px;width:1664px;height:120px;background:#FBFCFD;border-radius:20px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:340px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#C8102E;text-align:right">Хэйхэ</p>
+<svg style="width:48px;height:48px;color:#3A7CA5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+<p style="width:400px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#0F1B2D">Благовещенск</p>
+<p style="flex:1;font-size:32px;line-height:1.3;color:#3C4A5C">автомобильный мост через Амур, 2022</p>
+</div>
+<div data-build-in="left order 2" style="position:absolute;left:128px;top:470px;width:1664px;height:120px;background:#FBFCFD;border-radius:20px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:340px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#C8102E;text-align:right">Тунцзян</p>
+<svg style="width:48px;height:48px;color:#3A7CA5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+<p style="width:400px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#0F1B2D">Нижнеленинское</p>
+<p style="flex:1;font-size:32px;line-height:1.3;color:#3C4A5C">железнодорожный мост через Амур, 2022</p>
+</div>
+<div data-build-in="left order 3" style="position:absolute;left:128px;top:620px;width:1664px;height:120px;background:#FBFCFD;border-radius:20px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:340px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#C8102E;text-align:right">Суйфэньхэ</p>
+<svg style="width:48px;height:48px;color:#3A7CA5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+<p style="width:400px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#0F1B2D">Пограничный</p>
+<p style="flex:1;font-size:32px;line-height:1.3;color:#3C4A5C">железная дорога и торговля с Приморьем</p>
+</div>
+<p style="position:absolute;left:128px;top:276px;width:420px;font-size:24px;font-weight:700;color:#56657A;text-align:right">Китай</p>
+<p style="position:absolute;left:668px;top:276px;width:400px;font-size:24px;font-weight:700;color:#56657A">Россия</p>
+<p data-build-in="fade order 4" style="position:absolute;left:128px;top:800px;width:1664px;font-size:32px;line-height:1.4;color:#3C4A5C">А в самом Харбине проходит <b>Китайско-Российское ЭКСПО</b> — крупная выставка двух стран.</p>
+<svg aria-label="Мини-карта провинции" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><polygon points="22,50 100,30 160,34 250,66 322,122 346,178 370,242 400,298 460,346 520,362 592,402 604,474 640,498 700,498 760,466 832,450 856,438 826,506 790,554 766,610 730,666 688,698 658,722 622,746 616,794 586,838 550,802 508,786 454,762 406,746 364,714 316,698 268,690 220,674 184,634 166,570 202,506 220,450 262,378 280,314 214,266 130,234 58,194 34,122" fill="#FBFCFD" stroke="#0F1B2D" stroke-width="16" stroke-linejoin="round"/></svg>
+<svg aria-label="На мини-карте отмечены Хэйхэ, Тунцзян и Суйфэньхэ" data-build-in="pop auto" style="position:absolute;left:1652px;top:128px;width:140px;height:138px" width="870" height="860" viewBox="0 0 870 860" xmlns="http://www.w3.org/2000/svg"><circle cx="400" cy="294" r="52" fill="#C8102E"/><circle cx="700" cy="498" r="52" fill="#C8102E"/><circle cx="619" cy="762" r="52" fill="#C8102E"/></svg>
+<p data-build-in="fade auto" style="position:absolute;left:1300px;top:180px;width:330px;font-size:24px;font-weight:700;color:#C8102E;text-align:right">переходы в Россию</p>
+<aside>Хэйлунцзян — главные ворота Китая в Россию. Напротив китайского города Хэйхэ, на другом берегу Амура, стоит наш Благовещенск. В 2022 году их соединил первый автомобильный мост. В том же году открыли железнодорожный мост между Тунцзяном и селом Нижнеленинское в Еврейской автономной области. Через город Суйфэньхэ идут железная дорога и торговля с Приморьем. А в самом Харбине регулярно проходит Китайско-Российское ЭКСПО.</aside>
+</section>
+<section id="outro" data-transition="fade" style="background:#C8102E;color:#FBF5F5;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#FBF5F5">Вывод</p>
+<h2 data-build-in="rise auto" style="position:absolute;left:128px;top:330px;width:1500px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.2;color:#FBF5F5">Хэйлунцзян — холодный север, который кормит Китай и соединяет его с Россией.</h2>
+<p data-build-in="fade order 1" style="position:absolute;left:128px;top:720px;width:1500px;font-size:32px;line-height:1.4;color:#FBF5F5">Зерно · леса · нефть · Харбин · граница по Амуру</p>
+<aside>Подведу итог. Хэйлунцзян — холодный, но очень важный для Китая регион. Он кормит страну зерном, даёт нефть и лес, а через Харбин и пограничные города связывает Китай с Россией.</aside>
+</section>
+<section id="quiz" data-transition="push" style="background:#0F1B2D;color:#EEF3F6;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p data-build-in="fade auto" style="position:absolute;left:1000px;top:200px;width:792px;font-family:Oswald, Arial, sans-serif;font-size:400px;font-weight:700;line-height:1.1;color:#1F3656;text-align:right">?</p>
+<p style="position:absolute;left:128px;top:300px;width:1000px;font-size:32px;font-weight:700;letter-spacing:6px;text-transform:uppercase;color:#F26B6B">Квиз</p>
+<h1 data-build-in="pop auto" style="position:absolute;left:128px;top:360px;width:1300px;font-family:Oswald, Arial, sans-serif;font-size:200px;font-weight:700;line-height:1.1;color:#EEF3F6">5 вопросов</h1>
+<p data-build-in="rise auto" style="position:absolute;left:128px;top:610px;width:1100px;font-size:44px;line-height:1.3;color:#C9D6E3">Проверим, кто слушал внимательно!</p>
+<p style="position:absolute;left:128px;top:800px;width:1300px;font-size:32px;line-height:1.4;color:#8FA3B8">Отвечайте хором или поднимайте руку: А, Б, В или Г</p>
+<aside>А теперь небольшой квиз: проверим, кто внимательно слушал! Я задаю вопрос, вы отвечаете хором или поднимаете руку. Потом я нажимаю — и появляется правильный ответ.</aside>
+</section>
+<section id="q1" data-transition="push" style="background:#EEF3F6;color:#1B2A3D;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#C8102E">Вопрос 1 из 5</p>
+<h2 style="position:absolute;left:128px;top:168px;width:1664px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#0F1B2D">Как переводится название 黑龙江?</h2>
+<div style="position:absolute;left:128px;top:400px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">А</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">Жёлтая река</p>
+</div>
+<div style="position:absolute;left:984px;top:400px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">Б</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">Река Чёрного дракона</p>
+</div>
+<div style="position:absolute;left:128px;top:600px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">В</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">Северная столица</p>
+</div>
+<div style="position:absolute;left:984px;top:600px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">Г</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">Ледяной город</p>
+</div>
+<div data-build-in="pop order 1" style="position:absolute;left:984px;top:400px;width:808px;height:160px;border:8px solid #C8102E;border-radius:24px"></div>
+<div data-build-in="rise order 1" style="position:absolute;left:128px;top:800px;width:1664px;background:#0F1B2D;border-radius:20px;padding:28px 40px">
+<p style="font-size:32px;line-height:1.4;color:#EEF3F6"><b>Ответ: Б.</b> 黑 — «чёрный», 龙 — «дракон», 江 — «река». Так китайцы называют Амур.</p>
+</div>
+<aside>Первый вопрос: как переводится название провинции? Дайте подумать, затем нажмите — появится ответ: «Река Чёрного дракона».</aside>
+</section>
+<section id="q2" data-transition="push" style="background:#EEF3F6;color:#1B2A3D;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#C8102E">Вопрос 2 из 5</p>
+<h2 style="position:absolute;left:128px;top:168px;width:1664px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#0F1B2D">По какой реке проходит граница с Россией?</h2>
+<div style="position:absolute;left:128px;top:400px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">А</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">Янцзы</p>
+</div>
+<div style="position:absolute;left:984px;top:400px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">Б</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">Хуанхэ</p>
+</div>
+<div style="position:absolute;left:128px;top:600px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">В</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">Амур</p>
+</div>
+<div style="position:absolute;left:984px;top:600px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">Г</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">Волга</p>
+</div>
+<div data-build-in="pop order 1" style="position:absolute;left:128px;top:600px;width:808px;height:160px;border:8px solid #C8102E;border-radius:24px"></div>
+<div data-build-in="rise order 1" style="position:absolute;left:128px;top:800px;width:1664px;background:#0F1B2D;border-radius:20px;padding:28px 40px">
+<p style="font-size:32px;line-height:1.4;color:#EEF3F6"><b>Ответ: В.</b> Амур на севере и Уссури на востоке — больше 3000 км границы.</p>
+</div>
+<aside>Второй вопрос: по какой реке проходит граница с Россией? Правильный ответ — Амур.</aside>
+</section>
+<section id="q3" data-transition="push" style="background:#EEF3F6;color:#1B2A3D;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#C8102E">Вопрос 3 из 5</p>
+<h2 style="position:absolute;left:128px;top:168px;width:1664px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#0F1B2D">Где зафиксирован рекорд холода Китая −52,3 °C?</h2>
+<div style="position:absolute;left:128px;top:400px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">А</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">Харбин</p>
+</div>
+<div style="position:absolute;left:984px;top:400px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">Б</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">Пекин</p>
+</div>
+<div style="position:absolute;left:128px;top:600px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">В</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">Дацин</p>
+</div>
+<div style="position:absolute;left:984px;top:600px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">Г</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">Мохэ</p>
+</div>
+<div data-build-in="pop order 1" style="position:absolute;left:984px;top:600px;width:808px;height:160px;border:8px solid #C8102E;border-radius:24px"></div>
+<div data-build-in="rise order 1" style="position:absolute;left:128px;top:800px;width:1664px;background:#0F1B2D;border-radius:20px;padding:28px 40px">
+<p style="font-size:32px;line-height:1.4;color:#EEF3F6"><b>Ответ: Г.</b> Посёлок Мохэ на самом севере провинции, 1969 год. Его называют «полюсом холода» Китая.</p>
+</div>
+<aside>Третий вопрос: где зафиксирован рекорд холода Китая? Правильный ответ — посёлок Мохэ.</aside>
+</section>
+<section id="q4" data-transition="push" style="background:#EEF3F6;color:#1B2A3D;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#C8102E">Вопрос 4 из 5</p>
+<h2 style="position:absolute;left:128px;top:168px;width:1664px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#0F1B2D">Чем знаменит город Дацин?</h2>
+<div style="position:absolute;left:128px;top:400px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">А</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">Нефтью</p>
+</div>
+<div style="position:absolute;left:984px;top:400px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">Б</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">Чаем</p>
+</div>
+<div style="position:absolute;left:128px;top:600px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">В</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">Фарфором</p>
+</div>
+<div style="position:absolute;left:984px;top:600px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">Г</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">Шёлком</p>
+</div>
+<div data-build-in="pop order 1" style="position:absolute;left:128px;top:400px;width:808px;height:160px;border:8px solid #C8102E;border-radius:24px"></div>
+<div data-build-in="rise order 1" style="position:absolute;left:128px;top:800px;width:1664px;background:#0F1B2D;border-radius:20px;padding:28px 40px">
+<p style="font-size:32px;line-height:1.4;color:#EEF3F6"><b>Ответ: А.</b> Нефтяное месторождение Дацин открыли в 1959 году — это символ промышленности КНР.</p>
+</div>
+<aside>Четвёртый вопрос: чем знаменит Дацин? Правильный ответ — нефтью.</aside>
+</section>
+<section id="q5" data-transition="push" style="background:#EEF3F6;color:#1B2A3D;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#C8102E">Вопрос 5 из 5</p>
+<h2 style="position:absolute;left:128px;top:168px;width:1664px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#0F1B2D">Какая железная дорога дала жизнь Харбину?</h2>
+<div style="position:absolute;left:128px;top:400px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">А</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">БАМ</p>
+</div>
+<div style="position:absolute;left:984px;top:400px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">Б</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">КВЖД</p>
+</div>
+<div style="position:absolute;left:128px;top:600px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">В</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">Турксиб</p>
+</div>
+<div style="position:absolute;left:984px;top:600px;width:808px;height:160px;background:#FBFCFD;border-radius:24px;padding:0px 40px;display:flex;flex-direction:row;align-items:center;gap:32px">
+<p style="width:88px;font-family:Oswald, Arial, sans-serif;font-size:44px;color:#EEF3F6;background:#0F1B2D;border-radius:44px;padding:12px;text-align:center">Г</p>
+<p style="flex:1;font-size:44px;line-height:1.2;color:#0F1B2D">Великий шёлковый путь</p>
+</div>
+<div data-build-in="pop order 1" style="position:absolute;left:984px;top:400px;width:808px;height:160px;border:8px solid #C8102E;border-radius:24px"></div>
+<div data-build-in="rise order 1" style="position:absolute;left:128px;top:800px;width:1664px;background:#0F1B2D;border-radius:20px;padding:28px 40px">
+<p style="font-size:32px;line-height:1.4;color:#EEF3F6"><b>Ответ: Б.</b> Китайско-Восточная железная дорога: Россия начала строить её в 1898 году.</p>
+</div>
+<aside>Последний вопрос: какая железная дорога дала жизнь Харбину? Правильный ответ — КВЖД, Китайско-Восточная железная дорога.</aside>
+</section>
+<section id="sources" data-transition="fade" style="background:#EEF3F6;color:#1B2A3D;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#C8102E">Литература</p>
+<h2 style="position:absolute;left:128px;top:168px;width:1664px;font-family:Oswald, Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#0F1B2D">Источники</h2>
+<ol style="position:absolute;left:128px;top:310px;width:1664px;font-size:32px;line-height:1.5;color:#3C4A5C">
+<li>Большая российская энциклопедия: статья «Хэйлунцзян» — bigenc.ru</li>
+<li>Encyclopaedia Britannica: Heilongjiang — britannica.com</li>
+<li>Народное правительство провинции Хэйлунцзян (黑龙江省人民政府) — hlj.gov.cn</li>
+<li>Статистический ежегодник провинции Хэйлунцзян (黑龙江统计年鉴)</li>
+<li>ЮНЕСКО: Всемирный геопарк Удаляньчи — unesco.org</li>
+<li>Рамсарская конвенция: водно-болотные угодья Чжалун — ramsar.org</li>
+</ol>
+<aside>Здесь список источников, которые я использовал при подготовке доклада.</aside>
+</section>
+<section id="thanks" data-transition="fade" style="background:#0F1B2D;color:#EEF3F6;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column">
+<p data-build-in="fade auto" style="position:absolute;left:840px;top:250px;width:952px;font-family:'Noto Serif SC', serif;font-size:300px;line-height:1.1;color:#1F3656;text-align:right">谢谢</p>
+<h1 data-build-in="rise auto" style="position:absolute;left:128px;top:360px;width:1300px;font-family:Oswald, Arial, sans-serif;font-size:200px;font-weight:700;line-height:1.1;color:#EEF3F6">Спасибо!</h1>
+<p data-build-in="fade auto" style="position:absolute;left:128px;top:600px;width:1100px;font-size:44px;line-height:1.3;color:#F26B6B">谢谢 · Xièxie</p>
+<p style="position:absolute;left:128px;top:760px;width:1100px;font-size:44px;line-height:1.3;color:#C9D6E3">Ваши вопросы?</p>
+<aside>Спасибо за внимание! По-китайски — «сесе». Готов ответить на ваши вопросы.</aside>
+</section>
+</div>
+<div id="hint">Щёлкните или нажмите → / пробел, чтобы продолжить. F — полный экран, N — заметки докладчика.</div>
+<div id="bar"><button id="prev" aria-label="Назад">←</button><span id="count"></span><button id="next" aria-label="Дальше">→</button><button id="full">Полный экран</button><button id="notes">Заметки</button></div>
+<script>
+(function(){
+  var stage=document.getElementById('stage');
+  var S=[].slice.call(stage.children);
+  var cur=0, step=0, timers=[];
+  function fit(){var k=Math.min(innerWidth/1920,innerHeight/1080);stage.style.transform='scale('+k+') translate(-50%,-50%)';}
+  addEventListener('resize',fit);fit();
+  function parse(el){var p=el.getAttribute('data-build-in').split(/\s+/);var o=p.indexOf('order');return{fx:p[0],order:o>=0?+p[o+1]:null,auto:p.indexOf('auto')>=0};}
+  function plan(sec){
+    var els=[].slice.call(sec.querySelectorAll('[data-build-in]'));
+    var autos=[],clicks={};
+    els.forEach(function(el){var b=parse(el);if(b.auto||b.order===null)autos.push(el);else(clicks[b.order]=clicks[b.order]||[]).push(el);});
+    var keys=Object.keys(clicks).map(Number).sort(function(a,b){return a-b;});
+    return{autos:autos,groups:keys.map(function(k){return clicks[k];})};
+  }
+  S.forEach(function(s){s._plan=plan(s);});
+  function show(el,instant){el.style.setProperty('--a','b-'+parse(el).fx);el.classList.remove('done');el.classList.add('shown');if(instant)el.classList.add('done');}
+  function reset(sec){[].forEach.call(sec.querySelectorAll('[data-build-in]'),function(el){el.classList.remove('shown','done');});}
+  function go(i,fromEnd){
+    if(i<0||i>=S.length)return;
+    timers.forEach(clearTimeout);timers=[];
+    S[cur].classList.remove('on');
+    cur=i;var sec=S[cur];reset(sec);sec.classList.add('on');
+    var p=sec._plan;
+    if(fromEnd){p.autos.concat.apply(p.autos,p.groups).forEach(function(el){show(el,true);});step=p.groups.length;}
+    else{step=0;p.autos.forEach(function(el,k){timers.push(setTimeout(function(){show(el);},250+k*300));});}
+    document.getElementById('count').textContent=(cur+1)+' / '+S.length;
+    try{history.replaceState(null,'','#'+(cur+1));}catch(e){}
+  }
+  function next(){var p=S[cur]._plan;if(step<p.groups.length){p.groups[step].forEach(function(el){show(el);});step++;}else go(cur+1);}
+  function prev(){if(step>0){step--;p=S[cur]._plan;p.groups[step].forEach(function(el){el.classList.remove('shown','done');});}else go(cur-1,true);}
+  var p;
+  document.addEventListener('keydown',function(e){
+    if(['ArrowRight','ArrowDown','PageDown',' ','Enter'].indexOf(e.key)>=0){e.preventDefault();next();}
+    else if(['ArrowLeft','ArrowUp','PageUp','Backspace'].indexOf(e.key)>=0){e.preventDefault();prev();}
+    else if(e.key==='f'||e.key==='F'||e.key==='а'||e.key==='А')full();
+    else if(e.key==='n'||e.key==='N'||e.key==='т'||e.key==='Т')notes();
+    else if(e.key==='Home')go(0);else if(e.key==='End')go(S.length-1,true);
+  });
+  stage.addEventListener('click',function(e){if(e.clientX<innerWidth*0.2)prev();else next();});
+  var tx=null;addEventListener('touchstart',function(e){tx=e.touches[0].clientX;},{passive:true});
+  addEventListener('touchend',function(e){if(tx===null)return;var d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50){d<0?next():prev();}tx=null;});
+  function full(){if(!document.fullscreenElement){(document.documentElement.requestFullscreen||function(){}).call(document.documentElement);}else document.exitFullscreen();}
+  function notes(){S.forEach(function(s){s.classList.toggle('notes');});}
+  document.getElementById('next').onclick=function(e){e.stopPropagation();next();};
+  document.getElementById('prev').onclick=function(e){e.stopPropagation();prev();};
+  document.getElementById('full').onclick=function(e){e.stopPropagation();full();};
+  document.getElementById('notes').onclick=function(e){e.stopPropagation();notes();};
+  setTimeout(function(){document.getElementById('hint').style.opacity=0;},6000);
+  var start=parseInt((location.hash||'').slice(1),10);
+  S[0].classList.add('on');go(start>0&&start<=S.length?start-1:0);
+})();
+</script>
+</body>
+</html>
